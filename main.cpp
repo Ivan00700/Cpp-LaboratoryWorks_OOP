@@ -1,16 +1,16 @@
 #include <iostream>
 #include "grow.h"
 
-using namespace std;
+// using namespace std;
 
 int main() {
     
     long long UpSpeed, DownSpeed, desiredHeight, realHeight = 0, day = 0, night = 0;
-    cin>>UpSpeed>>DownSpeed>>desiredHeight;
+    std::cin>>UpSpeed>>DownSpeed>>desiredHeight;
     
     Laba_01 res = Plant(UpSpeed, DownSpeed, desiredHeight);
 
-    cout<<"Days needed: "<<res.day<<"\n"<<"Nights needed: "<<res.night<<"\n"<<"Total height: "<<res.realHeight;
+    std::cout<<"Days needed: "<<res.day<<"\n"<<"Nights needed: "<<res.night<<"\n"<<"Total height: "<<res.realHeight;
 
     return 0;
 }
